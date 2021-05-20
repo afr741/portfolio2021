@@ -17,6 +17,11 @@ body[data-theme="dark"] {
 
    .slider-image {
       border: 5px solid #8C8C8C;
+      .awssld__content > img{
+        object-fit: contain;
+        height: 100%;      
+      }
+      
    }
 
    .language {

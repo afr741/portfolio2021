@@ -7,7 +7,6 @@ import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 import 'lightbox2/dist/js/lightbox.min.js';
-
 import "./App.scss";
 import Navbar from "./components/navbar";
 import Header from "./components/Header";
