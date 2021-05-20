@@ -13,12 +13,12 @@
       {
         "title": "Globalcot",
         "startDate": "2019",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "description": "Cotract work to upgrade and develop a company website for a cotton processing company Globalcot",
         "images": [
           "images/portfolio/animal-shelter/p1.jpg",
           "images/portfolio/animal-shelter/p2.jpg"
         ],
-        "url": "",
+        "url": "https://globalcot.com",
         "technologies": [
           {
             "class": "devicon-react-original",
@@ -31,14 +31,16 @@
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "title": "NASM",
+        "startDate": "2020",
+        "description": "NASM - National Air and Space Museum - Smithsonian Institution. I was for developing 25 computer interactives for the future exhibits in the Smithsonian museum, which is scheduled for 2022",
         "images": [
           "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/photography/p2.jpg",
+          "images/portfolio/photography/p3.jpg"
+
         ],
-        "url": "https://github.com",
+        "url": "https://dev-ngx-nasm-batch-4-beta2-nasm.pantheonsite.io/ci-205-10-byoss",
         "technologies": [
           {
             "class": "devicon-react-original",
@@ -51,14 +53,14 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
+        "title": "VR Training Module",
         "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "description": "The Commons VR training module developed in Unity platform, with the intention to be used as a training simulator for the new hires in the The Commons, of Memorial University of Newfoundland.",
         "images": [
           "images/portfolio/adventure/p1.jpg",
           "images/portfolio/adventure/p2.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://github.com/mun-thecommons/VR-Training-Sim",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
