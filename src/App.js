@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import $ from "jquery";
-
+import { hot } from 'react-hot-loader';
 //import js libraries
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min.js';
@@ -101,4 +101,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default process.env.NODE_ENV === 'development' ? hot(module)(App) : App;
