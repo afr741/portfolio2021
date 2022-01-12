@@ -37,7 +37,7 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={mainTechnologies[0]==="ReactJS" ? <i className="fab fa-react experience-icon"></i> : <i className="fab fa-unity experience-icon"></i>}
+            icon={mainTechnologies[0]==="ReactJS" ? <i className="fab fa-react experience-icon"></i> : <i className="fas fa-code experience-icon"></i>}
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
