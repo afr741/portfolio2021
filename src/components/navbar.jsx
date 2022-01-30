@@ -64,7 +64,7 @@ class Navbar extends React.Component {
         if (target.length) {
           $("html, body").animate(
             {
-              scrollTop: target.offset().top - navHeight + 5
+              scrollTop: target.offset().top - navHeight - navHeight*0.05
             },
             1000,
             "easeInExpo"

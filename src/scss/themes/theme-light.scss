@@ -1,7 +1,13 @@
 body[data-theme="light"] {
   @import "../src/scss/light-slider.scss";
 
-  .slider-tab {
-    background-color: #d7caaa;
+  .navbar-b.navbar-trans .nav-link,
+  .navbar-b.navbar-reduce .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .navbar-b.navbar-trans .nav-link.active:before {
+    background-color: #000;
   }
 }
