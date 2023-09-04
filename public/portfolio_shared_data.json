@@ -1,68 +1,112 @@
 {
-    "basic_info": {
-      "name": "Anushervon Rakhmatov",
-      "titles": [ "Front-end Developer", "Unity Developer"],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com/afr741",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "LinkedIn",
-          "url": "https://www.linkedin.com/in/anushervon-rakhmatov",
-          "class": "fab fa-linkedin"
-        }
-      ],
-      "image": "myProfile.jpg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        },
-        {
-          "name": "MongoDB",
-          "class": "devicon-mongodb-plain",
-          "level": "60"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "Anushervon Rakhmatov",
+    "titles": [
+      "full-stack Developer",
+      "Software Architect",
+      "Frontend Pioneer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/afr741",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/anushervon-rakhmatov",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain",
+        "level": "95"
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "90"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "70"
+      },
+      {
+        "name": "Sass",
+        "class": "devicon-sass-original",
+        "level": "75"
+      },
+      {
+        "name": "Bootstrap",
+        "class": "devicon-bootstrap-plain",
+        "level": "85"
+      },
+      {
+        "name": "C#",
+        "class": "devicon-csharp-plain",
+        "level": "65"
+      },
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "60"
+      },
+      {
+        "name": "NodeJS",
+        "class": "devicon-nodejs-plain",
+        "level": "60"
+      },
+      {
+        "name": "sql",
+        "class": "devicon-mysql-plain",
+        "level": "60"
+      },
+      {
+        "name": "PostGres",
+        "class": "devicon-postgresql-plain",
+        "level": "60"
+      },
+      {
+        "name": "MongoDB",
+        "class": "devicon-mongodb-plain",
+        "level": "60"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "60"
+      },
+      {
+        "name": "NextJS",
+        "class": "devicon-nextjs-original",
+        "level": "60"
+      },
+      {
+        "name": "ThreeJS",
+        "class": "devicon-threejs-original",
+        "level": "60"
+      },
+      {
+        "name": "AWS",
+        "class": "devicon-amazonwebservices-plain",
+        "level": "60"
+      },
+      {
+        "name": "FastAPI",
+        "class": "devicon-fastapi-plain",
+        "level": "60"
+      }
+    ]
   }
+}

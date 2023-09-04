@@ -377,13 +377,12 @@ header h1 {
 
 .polaroid img {
   display: block;
-  max-width: 200px;
 }
 
 .polaroid span {
   background: #ffffff;
   display: inline-block;
-  margin: 55px 75px 30px;
+  // margin: 55px 0;
   padding: 15px 15px 30px;
   text-align: center;
   text-decoration: none;
