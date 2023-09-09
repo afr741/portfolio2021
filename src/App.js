@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import { hot } from 'react-hot-loader';
+import { hot } from "react-hot-loader";
 //import js libraries
-import 'jquery/dist/jquery.min.js';
-import 'popper.js/dist/popper.min.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import './libs/easing.js';
-import 'lightbox2/dist/js/lightbox.min.js';
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/popper.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "./libs/easing.js";
+import "lightbox2/dist/js/lightbox.min.js";
 import "./App.scss";
 import Navbar from "./components/navbar";
 import Header from "./components/Header";
@@ -17,7 +17,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 class App extends Component {
-
   constructor(props) {
     super();
     this.state = {
@@ -29,13 +28,9 @@ class App extends Component {
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
+    var resumePath = `res_primaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
   }
-
 
   componentDidMount() {
     this.loadSharedData();
@@ -101,4 +96,4 @@ class App extends Component {
   }
 }
 
-export default process.env.NODE_ENV === 'development' ? hot(module)(App) : App;
+export default process.env.NODE_ENV === "development" ? hot(module)(App) : App;
