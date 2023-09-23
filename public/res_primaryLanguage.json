@@ -13,7 +13,7 @@
     {
       "title": "BrandyAI",
       "startDate": "2023",
-      "description": "Micro-SaaS, developed as a personal project, that generates branding snippets and keywords for marketing purposes",
+      "description": "A Micro-SaaS, that generates branding snippets and keywords for marketing purposes using generative AI via OPEN-AI API",
       "images": [
         "images/portfolio/brandy/1.png",
         "images/portfolio/brandy/2.png"
