@@ -77,10 +77,27 @@ class ProjectDetailsModal extends Component {
               {img}
             </AwesomeSlider>
           </div>
+
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
               {title}
-              {url ? (
+              {Array.isArray(url) ? (
+                url.map((item, i) => {
+                  return (
+                    <a
+                      href={item}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-href"
+                    >
+                      <i
+                        className="fas fa-external-link-alt"
+                        style={{ marginLeft: "10px" }}
+                      ></i>
+                    </a>
+                  );
+                })
+              ) : (
                 <a
                   href={url}
                   target="_blank"
@@ -92,7 +109,7 @@ class ProjectDetailsModal extends Component {
                     style={{ marginLeft: "10px" }}
                   ></i>
                 </a>
-              ) : null}
+              )}
             </h3>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">

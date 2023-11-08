@@ -11,7 +11,7 @@
   },
   "projects": [
     {
-      "title": "BrandyAI",
+      "title": "Brandy-AI",
       "startDate": "2023",
       "description": "A Micro-SaaS, that generates branding snippets and keywords for marketing purposes using generative AI via OPEN-AI API",
       "images": [
@@ -65,19 +65,31 @@
       ]
     },
     {
-      "title": "NASM",
+      "title": "NASM - kiosk apps for Smithsonian Museum",
       "startDate": "2020",
       "description": "Project name \"NASM\" - a set of 25 interactive apps developed for Smithsonian museum. Developed with ReactJS, and Wordpress-based CMS. The demo link is one of the apps called \"Build your own solar system\"",
       "images": [
-        "images/portfolio/nasm/p1.jpg",
-        "images/portfolio/nasm/p2.jpg",
-        "images/portfolio/nasm/p3.jpg"
+        "images/portfolio/nasm/byoss.jpg",
+        "images/portfolio/nasm/icy.jpg",
+        "images/portfolio/nasm/p2.png"
       ],
-      "url": "https://byoss-demo-hm47.vercel.app",
+      "url": [
+        "https://byoss-demo-hm47.vercel.app",
+        "https://icy-demo.vercel.app/",
+        "https://ccm-demo.vercel.app/"
+      ],
       "technologies": [
         {
           "class": "devicon-react-original",
           "name": "React"
+        },
+        {
+          "class": "devicon-react-original",
+          "name": "ThreeJS"
+        },
+        {
+          "class": "devicon-react-original",
+          "name": "WebGL"
         },
         {
           "class": "devicon-javascript-plain",
