@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import postgresql from "@iconify/icons-logos/postgresql";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
-
+import nodeIcon from "@iconify/icons-logos/nodejs-icon";
+import typescriptIcon from "@iconify/icons-logos/typescript-icon";
+import awsIcon from "@iconify/icons-logos/aws";
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
@@ -31,15 +32,20 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={nodeIcon}
+                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                  />
+
+                  <Icon
+                    icon={typescriptIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={reactIcon}
+                    icon={postgresql}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={awsIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
