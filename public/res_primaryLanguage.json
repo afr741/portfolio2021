@@ -141,25 +141,26 @@
   "experience": [
     {
       "company": "Paypal",
-      "title": "Front-End Developer",
+      "title": "Software Engineer",
       "years": "03.2022 - present",
       "mainTech": [
-        "ReactJS"
+        "NodeJS"
       ],
       "technologies": [
         "RxJS",
         "NodeJS",
         "Typescript",
         "Storybook",
-        "Contentful"
+        "Contentful",
+        "AWS"
       ]
     },
     {
       "company": "NGX Interactive",
-      "title": "Front-End Developer",
+      "title": "Software Developer",
       "years": "02.2020 - 03.2022",
       "mainTech": [
-        "ReactJS"
+        "NodeJS, Unity"
       ],
       "technologies": [
         "REST API",
@@ -174,10 +175,10 @@
       "title": "Contract Web Developer",
       "years": "04.2019 - 02.2020",
       "mainTech": [
-        "ReactJS"
+        "Angular"
       ],
       "technologies": [
-        "RxJS",
+        "Angular",
         "JavaScript",
         "DHTMLX Gantt"
       ]
