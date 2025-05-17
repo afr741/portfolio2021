@@ -11,6 +11,34 @@
   },
   "projects": [
     {
+      "title": "Loblaw Advanced",
+      "startDate": "2024",
+      "description": "The product leverages deep insights into Canadian shopper behavior, combining loyalty programs, media, analytics, and strategic planning to help brands connect with customers effectively. It offers integrated solutions to deliver targeted, omni-channel marketing and merchandising experiences.",
+      "images": [
+        "images/portfolio/loblaw/1.png",
+        "images/portfolio/loblaw/2.png"
+      ],
+      "url": "https://www.loblawadvance.ca/about",
+      "technologies": [
+        {
+          "class": "devicon-nextjs-original",
+          "name": "NextJs"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "TypeScript"
+        },
+        {
+          "class": "devicon-spring-plain",
+          "name": "Spring Boot"
+        },
+        {
+          "class": "devicon-googlecloud-plain",
+          "name": "GCP"
+        }
+      ]
+    },
+    {
       "title": "Brandy-AI",
       "startDate": "2023",
       "description": "A Micro-SaaS, that generates branding snippets and keywords for marketing purposes using generative AI via OPEN-AI API",
@@ -139,6 +167,21 @@
     }
   ],
   "experience": [
+    {
+      "company": "Loblaw Digital",
+      "title": "Software Engineer",
+      "years": "03.2024 - present",
+      "mainTech": [
+        "NodeJS"
+      ],
+      "technologies": [
+        "RxJS",
+        "NodeJS",
+        "Typescript",
+        "Storybook",
+        "GCP"
+      ]
+    },
     {
       "company": "Paypal",
       "title": "Software Engineer",
