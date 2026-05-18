@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "echo 'Deployment is handled by Vercel via GitHub push'"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
