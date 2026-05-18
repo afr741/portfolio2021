@@ -20,7 +20,7 @@
     "react-bootstrap": "^2.10.10",
     "react-dom": "^18.2.0",
     "react-ga": "^3.1.2",
-    "react-switch": "^5.0.1",
+    "react-switch": "^7.1.0",
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.3.3",
     "sass": "^1.66.1"
