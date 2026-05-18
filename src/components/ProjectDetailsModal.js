@@ -1,9 +1,13 @@
+'use client';
+
 import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
-import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
+import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+import "../scss/light-slider.scss";
+import "../scss/dark-slider.scss";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -29,9 +33,8 @@ class ProjectDetailsModal extends Component {
           );
         });
         if (this.props.data.images) {
-          console.log(images);
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={require(`../assets/${elem}`)} />;
+            return <div key={i} data-src={`/assets/${elem}`} />;
           });
         }
       }
@@ -50,30 +53,11 @@ class ProjectDetailsModal extends Component {
         <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
             <div className="slider-tab">
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="emojione:red-circle"
-                data-inline="false"
-                style={{ marginLeft: "5px" }}
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:yellow-circle"
-                data-inline="false"
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:green-circle"
-                data-inline="false"
-              ></span>
+              <span className="mac-dot mac-dot--red" style={{ marginLeft: "5px" }} />
+              <span className="mac-dot mac-dot--yellow" />
+              <span className="mac-dot mac-dot--green" />
             </div>
-            <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-              animation="scaleOutAnimation"
-              className="slider-image"
-            >
+            <AwesomeSlider animation="scaleOutAnimation" className="slider-image">
               {img}
             </AwesomeSlider>
           </div>
@@ -82,21 +66,20 @@ class ProjectDetailsModal extends Component {
             <h3 style={{ padding: "5px 5px 0 5px" }}>
               {title}
               {Array.isArray(url) ? (
-                url.map((item, i) => {
-                  return (
-                    <a
-                      href={item}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link-href"
-                    >
-                      <i
-                        className="fas fa-external-link-alt"
-                        style={{ marginLeft: "10px" }}
-                      ></i>
-                    </a>
-                  );
-                })
+                url.map((item, i) => (
+                  <a
+                    key={i}
+                    href={item}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                  >
+                    <i
+                      className="fas fa-external-link-alt"
+                      style={{ marginLeft: "10px" }}
+                    ></i>
+                  </a>
+                ))
               ) : (
                 <a
                   href={url}

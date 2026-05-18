@@ -2,14 +2,14 @@
   "basic_info": {
     "name": "Anushervon Rakhmatov",
     "titles": [
-      "Software Solutions Consultant",
-      "full-stack Developer",
-      "Frontend Engineer"
+      "AI-Powered Software Consulting",
+      "Full Stack Architecture",
+      "React.js / Node.js Expert"
     ],
     "social": [
       {
         "name": "github",
-        "url": "https://github.com/afr741",
+        "url": "https://github.com/af4741",
         "class": "fab fa-github"
       },
       {
@@ -23,6 +23,26 @@
   "skills": {
     "icons": [
       {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "95"
+      },
+      {
+        "name": "NodeJS",
+        "class": "devicon-nodejs-plain",
+        "level": "92"
+      },
+      {
+        "name": "TypeScript",
+        "class": "devicon-typescript-plain",
+        "level": "92"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "95"
+      },
+      {
         "name": "HTML 5",
         "class": "devicon-html5-plain",
         "level": "95"
@@ -30,82 +50,82 @@
       {
         "name": "CSS 3",
         "class": "devicon-css3-plain",
-        "level": "95"
-      },
-      {
-        "name": "TypeScript",
-        "class": "devicon-typescript-plain",
         "level": "90"
-      },
-      {
-        "name": "JavaScript",
-        "class": "devicon-javascript-plain",
-        "level": "70"
-      },
-      {
-        "name": "Sass",
-        "class": "devicon-sass-original",
-        "level": "75"
-      },
-      {
-        "name": "Bootstrap",
-        "class": "devicon-bootstrap-plain",
-        "level": "85"
-      },
-      {
-        "name": "C#",
-        "class": "devicon-csharp-plain",
-        "level": "65"
-      },
-      {
-        "name": "Python",
-        "class": "devicon-python-plain",
-        "level": "60"
-      },
-      {
-        "name": "NodeJS",
-        "class": "devicon-nodejs-plain",
-        "level": "60"
-      },
-      {
-        "name": "sql",
-        "class": "devicon-mysql-plain",
-        "level": "60"
-      },
-      {
-        "name": "PostGres",
-        "class": "devicon-postgresql-plain",
-        "level": "60"
-      },
-      {
-        "name": "MongoDB",
-        "class": "devicon-mongodb-plain",
-        "level": "60"
-      },
-      {
-        "name": "React",
-        "class": "devicon-react-original",
-        "level": "60"
       },
       {
         "name": "NextJS",
         "class": "devicon-nextjs-original",
-        "level": "60"
+        "level": "85"
       },
       {
-        "name": "ThreeJS",
-        "class": "devicon-threejs-original",
-        "level": "60"
+        "name": "MongoDB",
+        "class": "devicon-mongodb-plain",
+        "level": "85"
+      },
+      {
+        "name": "PostgreSQL",
+        "class": "devicon-postgresql-plain",
+        "level": "75"
+      },
+      {
+        "name": "Redis",
+        "class": "devicon-redis-plain",
+        "level": "70"
+      },
+      {
+        "name": "GraphQL",
+        "class": "devicon-graphql-plain",
+        "level": "70"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "70"
       },
       {
         "name": "AWS",
         "class": "devicon-amazonwebservices-plain",
-        "level": "60"
+        "level": "70"
       },
       {
-        "name": "FastAPI",
-        "class": "devicon-fastapi-plain",
-        "level": "60"
+        "name": "GCP",
+        "class": "devicon-googlecloud-plain",
+        "level": "70"
+      },
+      {
+        "name": "Jest",
+        "class": "devicon-jest-plain",
+        "level": "85"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain",
+        "level": "90"
+      },
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "65"
+      },
+      {
+        "name": "OpenAI API",
+        "class": "fas fa-brain",
+        "level": "82"
+      },
+      {
+        "name": "LangChain",
+        "class": "fas fa-robot",
+        "level": "72"
+      },
+      {
+        "name": "Prompt Engineering",
+        "class": "fas fa-microchip",
+        "level": "78"
+      },
+      {
+        "name": "AI Integration",
+        "class": "fas fa-network-wired",
+        "level": "80"
       }
     ]
   }

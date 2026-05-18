@@ -1,150 +1,110 @@
-import $ from "jquery";
-import React from "react";
-// import logo1 from "../assets/images/male1.png";
-// import logo2 from "../assets/images/male.png";
-import logo1 from "../assets/images/male-new.png";
+'use client';
 
-class Navbar extends React.Component {
+import React, { Component } from "react";
+
+const logoSrc = "/assets/images/male-new.png";
+
+class Navbar extends Component {
   constructor() {
     super();
     this.state = {
-      logo: logo1,
+      menuOpen: false,
+      reduced: false,
     };
+    this.handleScroll = this.handleScroll.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   componentDidMount() {
-    const nav = $("nav");
-    let navHeight = nav.outerHeight();
+    window.addEventListener("scroll", this.handleScroll);
+  }
 
-    $(".navbar-toggler").on("click", function () {
-      if (!$("#mainNav").hasClass("navbar-reduce")) {
-        $("#mainNav").addClass("navbar-reduce");
-      }
-    });
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
 
-    $("body").scrollspy({
-      target: "#mainNav",
-      offset: navHeight,
-    });
+  handleScroll() {
+    this.setState({ reduced: window.pageYOffset > 50 });
+  }
 
-    $(".js-scroll").on("click", function () {
-      $(".navbar-collapse").collapse("hide");
-    });
+  toggleMenu() {
+    this.setState((prev) => ({ menuOpen: !prev.menuOpen }));
+  }
 
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 50) {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-reduce");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-trans");
-        this.setState({ logo: logo1 });
-      } else {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-trans");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-reduce");
-        this.setState({ logo: logo1 });
-      }
-    });
-
-    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
-      if (
-        window.location.pathname.replace(/^\//, "") ===
-          this.pathname.replace(/^\//, "") &&
-        window.location.hostname === this.hostname
-      ) {
-        var target = $(this.hash);
-        target = target.length
-          ? target
-          : $("[name=" + this.hash.slice(1) + "]");
-        if (target.length) {
-          $("html, body").animate(
-            {
-              scrollTop: target.offset().top - navHeight * 2,
-            },
-            1000,
-            "easeInExpo"
-          );
-          return false;
-        }
-      }
-    });
-
-    $(".js-scroll").on("click", function () {
-      $(".navbar-collapse").collapse("hide");
-    });
+  scrollTo(id) {
+    this.setState({ menuOpen: false });
+    const target = document.getElementById(id);
+    if (!target) return;
+    const nav = document.getElementById("mainNav");
+    const offset = nav ? nav.offsetHeight : 60;
+    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top, behavior: "smooth" });
   }
 
   render() {
+    const { menuOpen, reduced } = this.state;
+    const navClass = [
+      "navbar navbar-b navbar-expand-md fixed-top",
+      reduced ? "navbar-reduce" : "navbar-trans",
+    ].join(" ");
+
+    const links = [
+      { label: "Home",       id: "home" },
+      { label: "About",      id: "about" },
+      { label: "Work",       id: "portfolio" },
+      { label: "Experience", id: "resume" },
+    ];
+
     return (
-      <nav
-        className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-        id="mainNav"
-      >
+      <nav className={navClass} id="mainNav">
         <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
-            <img
-              src={this.state.logo}
-              alt="logo"
-              style={{ maxWidth: "100px" }}
-            />
+          <a
+            className="navbar-brand"
+            href="#home"
+            onClick={(e) => { e.preventDefault(); this.scrollTo("home"); }}
+          >
+            <img src={logoSrc} alt="logo" style={{ maxWidth: "100px" }} />
           </a>
+
           <button
-            className="navbar-toggler collapsed"
+            className={`navbar-toggler${menuOpen ? "" : " collapsed"}`}
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
             aria-controls="navbarDefault"
-            aria-expanded="false"
+            aria-expanded={menuOpen}
             aria-label="Toggle navigation"
+            onClick={this.toggleMenu}
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
+
           <div
-            className="navbar-collapse collapse justify-content-end"
+            className={`navbar-collapse${menuOpen ? " show" : " collapse"} justify-content-end`}
             id="navbarDefault"
           >
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#portfolio">
-                  Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#resume">
-                  Experience
-                </a>
-              </li>
-
+              {links.map(({ label, id }) => (
+                <li className="nav-item" key={id}>
+                  <a
+                    className="nav-link"
+                    href={`#${id}`}
+                    onClick={(e) => { e.preventDefault(); this.scrollTo(id); }}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
               <li className="nav-item">
                 <a
-                  className="nav-link js-scroll"
+                  className="nav-link"
                   href="https://drive.google.com/drive/folders/1LvWbFJeoeYdMDqZ-rHq9VtXQocVeBLqd?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </a>
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link js-scroll" href="#contact">
-                  Contact
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

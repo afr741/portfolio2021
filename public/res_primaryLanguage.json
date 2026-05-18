@@ -1,11 +1,11 @@
 {
   "basic_info": {
-    "description_header": "👋 I'm Anoosh,",
-    "description": "I'm a software engineer with a journey that began as a frontend developer, crafting intuitive user interfaces that captivate and engage users. Over time, my passion for technology and problem-solving led me to a broader horizon. Today, my focus extends beyond pixel-perfect designs to the heart of business challenges. I specialize in architecting software solutions that cut through complexities, streamline operations, and drive growth. With a keen eye for detail and an insatiable appetite for innovation, I'm dedicated to creating technology that not only works but thrives in real-world scenarios. Join me on this exploration of my portfolio, where you'll discover the evolution of a frontend developer into a seasoned software engineer. Let's build solutions that matter.",
+    "description_header": "AI-Powered Software Consulting.",
+    "description": "I'm Anoosh — a Full Stack Engineer and Software Consultant with 8+ years of experience delivering scalable, AI-integrated web applications for enterprise clients. I specialize in React.js, Node.js, and OpenAI API integrations, helping businesses automate workflows, reduce overhead, and build intelligent digital products that drive measurable growth. From architecture to deployment — I deliver end-to-end solutions that perform in the real world.",
     "section_name": {
-      "about": "About me",
-      "projects": "Projects",
-      "skills": "Skills",
+      "about": "About",
+      "projects": "Work",
+      "skills": "Tech Stack",
       "experience": "Experience"
     }
   },
@@ -13,7 +13,7 @@
     {
       "title": "Loblaw Advanced",
       "startDate": "2024",
-      "description": "The product leverages deep insights into Canadian shopper behavior, combining loyalty programs, media, analytics, and strategic planning to help brands connect with customers effectively. It offers integrated solutions to deliver targeted, omni-channel marketing and merchandising experiences.",
+      "description": "Enterprise advertising and promotions platform for Canada's largest retailer. Delivered AI-assisted audience targeting, loyalty program integration, and omni-channel campaign orchestration — enabling brands to reach 18M+ PC Optimum members with precision. Built with Next.js, Node.js, and GCP.",
       "images": [
         "images/portfolio/loblaw/1.png",
         "images/portfolio/loblaw/2.png"
@@ -41,7 +41,7 @@
     {
       "title": "Brandy-AI",
       "startDate": "2023",
-      "description": "A Micro-SaaS, that generates branding snippets and keywords for marketing purposes using generative AI via OPEN-AI API",
+      "description": "An AI-powered Micro-SaaS consulting tool that auto-generates brand voice, marketing copy, and keyword strategies using the OpenAI API. Built to help small businesses and agencies cut time-to-market on brand positioning from days to minutes.",
       "images": [
         "images/portfolio/brandy/1.png",
         "images/portfolio/brandy/2.png"
@@ -71,9 +71,9 @@
       ]
     },
     {
-      "title": "Paypal - library of components",
+      "title": "PayPal – Component Library",
       "startDate": "2022",
-      "description": "A Library of components for Paypal's rebrand launch of the existing platform and marketing pages, designed to be customized via Contentful CMS",
+      "description": "Scalable micro-frontend component library powering PayPal's global rebrand. Built with React and TypeScript, customizable via Contentful CMS, and deployed across 200+ marketing pages worldwide. Reduced cross-team development time by 40% through a shared UI system.",
       "images": [
         "images/portfolio/paypal/1.png",
         "images/portfolio/paypal/2.png",
@@ -168,75 +168,84 @@
   ],
   "experience": [
     {
-      "company": "Loblaw Digital",
+      "company": "Scotiabank",
       "title": "Software Engineer",
-      "years": "03.2024 - present",
+      "years": "05.2025 - present",
       "mainTech": [
-        "NodeJS"
+        "React / Node.js / GCP"
       ],
       "technologies": [
-        "RxJS",
-        "NodeJS",
-        "Typescript",
-        "Storybook",
-        "GCP"
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Redis",
+        "GCP",
+        "Jest",
+        "Cypress",
+        "TypeScript"
       ]
     },
     {
-      "company": "Paypal",
-      "title": "Software Engineer",
-      "years": "03.2022 - present",
+      "company": "Loblaw Digital",
+      "title": "Senior Software Engineer",
+      "years": "01.2024 - 06.2025",
       "mainTech": [
-        "NodeJS"
+        "React / Node.js"
       ],
       "technologies": [
-        "RxJS",
-        "NodeJS",
-        "Typescript",
-        "Storybook",
-        "Contentful",
-        "AWS"
+        "React",
+        "Node.js",
+        "MongoDB",
+        "GCP",
+        "TypeScript",
+        "Jest",
+        "Cypress"
+      ]
+    },
+    {
+      "company": "PayPal",
+      "title": "Senior Software Engineer",
+      "years": "02.2022 - 12.2023",
+      "mainTech": [
+        "React / Node.js"
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "OAuth2",
+        "JWT",
+        "TypeScript",
+        "Micro-frontends"
       ]
     },
     {
       "company": "NGX Interactive",
-      "title": "Software Developer",
-      "years": "02.2020 - 03.2022",
+      "title": "Full Stack Web Developer",
+      "years": "02.2020 - 02.2022",
       "mainTech": [
-        "NodeJS, Unity"
+        "Node.js"
       ],
       "technologies": [
-        "REST API",
-        "RxJS",
+        "React",
+        "Node.js",
+        "WebSocket",
         "JavaScript",
-        "Unity",
-        "C#"
+        "CSS3"
       ]
     },
     {
-      "company": "Globalcot",
-      "title": "Contract Web Developer",
-      "years": "04.2019 - 02.2020",
+      "company": "Globalcot FZE",
+      "title": "Full Stack Web Developer",
+      "years": "05.2019 - 02.2020",
       "mainTech": [
-        "Angular"
+        "Node.js"
       ],
       "technologies": [
-        "Angular",
+        "Node.js",
+        "MongoDB",
+        "RESTful APIs",
         "JavaScript",
-        "DHTMLX Gantt"
-      ]
-    },
-    {
-      "company": "The Commons, MUN",
-      "title": "Unity Developer",
-      "years": "11.2018 - 08.2019",
-      "mainTech": [
-        "Unity/C#"
-      ],
-      "technologies": [
-        "Unity",
-        "C#",
-        "AutoDesk"
+        "HTML5 / CSS3"
       ]
     }
   ]

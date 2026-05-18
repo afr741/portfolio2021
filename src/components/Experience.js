@@ -1,3 +1,5 @@
+'use client';
+
 import React, { Component } from "react";
 import {
   VerticalTimeline,
@@ -16,14 +18,14 @@ class Experience extends Component {
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
+            <Badge className="main-badge rounded-pill me-2 mb-2" key={i}>
               {technology}
             </Badge>
           );
         });
         var tech = technologies.map((technology, i) => {
           return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+            <Badge className="experience-badge rounded-pill me-2 mb-2" key={i}>
               {technology}
             </Badge>
           );
@@ -66,8 +68,8 @@ class Experience extends Component {
       <section id="resume" className="pb-5">
         <div className="col-md-12 mx-auto">
           <div className="col-md-12">
-            <h1 className="section-title" style={{ color: "black" }}>
-              <span className="text-black" style={{ textAlign: "center" }}>
+            <h1 className="section-title">
+              <span style={{ textAlign: "center" }}>
                 {sectionName}
               </span>
             </h1>

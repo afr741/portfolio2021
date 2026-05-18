@@ -1,5 +1,11 @@
+'use client';
+
 import React, { Component } from "react";
-import ProjectDetailsModal from "./ProjectDetailsModal";
+import dynamic from "next/dynamic";
+
+const ProjectDetailsModal = dynamic(() => import("./ProjectDetailsModal"), {
+  ssr: false,
+});
 
 class Projects extends Component {
   constructor(props) {
@@ -29,16 +35,14 @@ class Projects extends Component {
               <div className="foto" onClick={() => detailsModalShow(projects)}>
                 <div>
                   <img
-                    src={require(`../assets/${projects.images[0]}`)}
-                    alt="projectImages"
+                    src={`/assets/${projects.images[0]}`}
+                    alt={projects.title}
                     height="230"
-                    style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
+                    style={{ marginBottom: 0, paddingBottom: 0, position: "relative" }}
                   />
                   <span className="project-date">{projects.startDate}</span>
                   <br />
-                  <p className="project-title-settings mt-3">
-                    {projects.title}
-                  </p>
+                  <p className="project-title-settings mt-3">{projects.title}</p>
                 </div>
               </div>
             </span>
@@ -50,7 +54,7 @@ class Projects extends Component {
     return (
       <section id="portfolio">
         <div className="col-md-12">
-          <h1 className="section-title" style={{ color: "black" }}>
+          <h1 className="section-title">
             <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">

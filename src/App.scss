@@ -1,5 +1,5 @@
-@import "../src/scss/themes/theme-dark.scss";
-@import "../src/scss/themes/theme-light.scss";
+@import "./scss/themes/theme-dark.scss";
+@import "./scss/themes/theme-light.scss";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap");
 
 html {
@@ -229,8 +229,9 @@ NAVBAR
 }
 
 .header-icon {
-  height: 150px;
-  width: 150px;
+  display: block;
+  font-size: 90px;
+  line-height: 1.2;
 }
 
 header {
@@ -242,7 +243,7 @@ header {
   -webkit-background-size: cover;
   text-align: center;
   overflow: hidden;
-  background-color: #e9d5a1;
+  background-color: #f0f0ff;
   animation: backgorundcolor 1s linear;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -279,7 +280,7 @@ header {
 
 .language {
   font-size: 25px;
-  background-color: #e9d5a1;
+  background-color: #f0f0ff;
   padding-bottom: 10px;
   padding-top: 80px;
 }
@@ -288,19 +289,35 @@ header h1 {
   font-size: 400%;
   text-align: center;
   font-weight: 600 !important;
-  color: #353239;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #1e1b4b;
+  font-family: "Raleway", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0 auto 18px auto;
   width: 100%;
 }
 
 .slider-image {
-  border: 5px solid #d7caaa;
+  border: 5px solid #312e81;
 }
 
 .slider-tab {
-  background-color: #d7caaa;
+  background-color: #312e81;
   height: 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  gap: 6px;
+}
+
+.mac-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &--red    { background-color: #ff5f57; }
+  &--yellow { background-color: #febc2e; }
+  &--green  { background-color: #28c840; }
 }
 
 .slider-iconfiy {
@@ -317,12 +334,20 @@ header h1 {
   overflow: hidden;
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 #about h1 {
   padding-top: 5%;
-  font: 18px/24px "opensans-bold", sans-serif;
+  font-family: "Raleway", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: black;
+  color: #1e1b4b;
   text-align: center;
 }
 
@@ -368,10 +393,12 @@ header h1 {
 
 .project-title-settings {
   margin-top: 5%;
-  font: 18px/24px "opensans-bold", sans-serif;
+  font-family: "Raleway", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: black;
+  letter-spacing: 2px;
+  color: #1e1b4b;
   text-align: center;
 }
 
@@ -424,7 +451,7 @@ header h1 {
 }
 
 #resume {
-  background: #efe1bd;
+  background: #f5f3ff;
 }
 
 .experience-icon {
@@ -438,10 +465,10 @@ header h1 {
   text-align: left !important;
   padding: 5px 8px 5px 8px !important;
   vertical-align: baseline;
-  background-color: #ae944f !important;
-  color: white;
+  background-color: #6366f1 !important;
+  color: white !important;
   font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Raleway", Cambria, Georgia, serif;
 }
 
 .experience-badge {
@@ -449,10 +476,10 @@ header h1 {
   text-align: left !important;
   padding: 5px 8px 5px 8px !important;
   vertical-align: baseline;
-  background-color: #f9f5e9 !important;
-  color: black;
+  background-color: #e0e7ff !important;
+  color: #3730a3 !important;
   font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Raleway", Cambria, Georgia, serif;
 }
 
 .vertical-timeline-element-date {
@@ -493,7 +520,8 @@ header h1 {
 }
 
 .bars li em {
-  font: 15px "opensans-bold", sans-serif;
+  font-family: "Raleway", "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
   color: #313131;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -546,7 +574,7 @@ header h1 {
 }
 
 #portfolio {
-  background: #efe1bd;
+  background: #eef2ff;
 }
 
 .portfolio-item {
@@ -607,7 +635,7 @@ header h1 {
 }
 
 #skills {
-  background: #1f1f1f;
+  background: #1e1b4b;
   min-height: 200px;
   width: 100%;
   overflow: hidden;
@@ -617,10 +645,13 @@ header h1 {
 .section-title {
   padding-top: 5%;
   padding-bottom: 5%;
-  font: 18px/24px "opensans-bold", sans-serif;
+  font-family: "Raleway", "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: #1e1b4b;
   text-align: center;
 }
 
@@ -632,7 +663,7 @@ header h1 {
 }
 
 footer {
-  background: #1f1f1f;
+  background: #1e1b4b;
   min-height: 100px;
   width: 100%;
   overflow: hidden;

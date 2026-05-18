@@ -3,11 +3,125 @@ body[data-theme="light"] {
 
   .navbar-b.navbar-trans .nav-link,
   .navbar-b.navbar-reduce .nav-link {
-    color: #000;
+    color: #1e1b4b;
     text-transform: uppercase;
     font-weight: 600;
   }
   .navbar-b.navbar-trans .nav-link.active:before {
-    background-color: #000;
+    background-color: #6366f1;
+  }
+  .navbar-b.navbar-reduce .nav-link {
+    color: #4f46e5;
+  }
+  .navbar-b.navbar-reduce .nav-link:before {
+    background-color: #4f46e5;
+  }
+
+  header {
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 60%, #f0f0ff 100%);
+    h1 {
+      color: #1e1b4b;
+    }
+  }
+
+  .title-styles {
+    color: #4f46e5;
+  }
+
+  .header-icon {
+    color: #6366f1;
+    opacity: 0.85;
+  }
+
+  .language {
+    background-color: #eef2ff;
+  }
+
+  .slider-tab {
+    background-color: #6366f1;
+  }
+
+  .slider-image {
+    border: 5px solid #6366f1;
+  }
+
+  .link-href {
+    color: #4f46e5;
+  }
+
+  .project-date {
+    background-color: #6366f1;
+    border-top-color: #4f46e5;
+    color: white;
+  }
+
+  #about {
+    background-color: #ffffff;
+    h1 span {
+      color: #1e1b4b;
+    }
+    .polaroid span {
+      background: #ffffff;
+    }
+    .card {
+      background: #ffffff;
+      color: #1f1f2e;
+      border: 1px solid #c7d2fe;
+    }
+  }
+
+  #portfolio {
+    background: #eef2ff;
+    .section-title {
+      color: #1e1b4b !important;
+    }
+    .foto div {
+      background: #ffffff;
+    }
+    .project-title-settings {
+      color: #1e1b4b;
+    }
+  }
+
+  #resume {
+    background: #f5f3ff;
+    .section-title {
+      color: #1e1b4b !important;
+    }
+    .experience-badge {
+      background: #e0e7ff !important;
+      color: #3730a3 !important;
+    }
+    .main-badge {
+      background: #6366f1 !important;
+      color: white !important;
+    }
+    .vertical-timeline-element-date {
+      color: #3730a3;
+    }
+    .vertical-timeline-element-icon {
+      background: #6366f1 !important;
+    }
+    @media only screen and (max-width: 1169px) {
+      .vertical-timeline-element-date {
+        color: #1e1b4b;
+      }
+    }
+  }
+
+  #skills {
+    background: #1e1b4b;
+    .section-title {
+      color: #c7d2fe !important;
+    }
+  }
+
+  .modal-inside .modal-content {
+    background: #ffffff;
+    color: #1f1f2e;
+  }
+
+  .close-icon {
+    color: #1e1b4b;
   }
 }
