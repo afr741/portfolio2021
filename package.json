@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node -e \"require('fs').cpSync('src/assets','public/assets',{recursive:true,force:true})\"",
     "build": "next build",
     "start": "next start",
     "deploy": "echo 'Deployment is handled by Vercel via GitHub push'"
