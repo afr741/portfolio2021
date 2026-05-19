@@ -100,9 +100,7 @@ export default function RootLayout({ children }) {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-          integrity="sha512-1ycn6IcaQQ40/MKBW37O/R04232FyaBmDPpj0xYJ9ORFEtpfkV4pS0sEIrhYUFMsKnNOAEVXK7JRmSezXQBQ=="
           crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
         />
         <script
           type="application/ld+json"
