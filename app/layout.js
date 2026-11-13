@@ -3,7 +3,7 @@ import '../src/index.scss';
 import '../src/App.scss';
 
 export const metadata = {
-  metadataBase: new URL('https://af4741.github.io'),
+  metadataBase: new URL('https://www.innoflowai.ca'),
   title: {
     default: 'Anushervon Rakhmatov | Full Stack Engineer & AI Consultant',
     template: '%s | Anushervon Rakhmatov',
@@ -31,8 +31,8 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_CA',
-    url: 'https://af4741.github.io',
-    siteName: 'Anushervon Rakhmatov | Portfolio',
+    url: 'https://www.innoflowai.ca/anushervon',
+    siteName: 'Innoflow AI',
     title: 'Anushervon Rakhmatov | Full Stack Engineer & AI Consultant',
     description:
       'Full Stack Engineer with 8+ years building scalable, AI-integrated web applications for enterprise clients including Scotiabank, Loblaw, and PayPal.',
@@ -45,18 +45,11 @@ export const metadata = {
     creator: '@af4741',
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   alternates: {
-    canonical: 'https://af4741.github.io',
+    canonical: 'https://www.innoflowai.ca/anushervon',
   },
 };
 
@@ -65,13 +58,14 @@ const jsonLd = {
   '@type': 'Person',
   name: 'Anushervon Rakhmatov',
   alternateName: 'Anoosh',
-  url: 'https://af4741.github.io',
+  url: 'https://www.innoflowai.ca/anushervon',
   jobTitle: 'Full Stack Engineer & AI Consultant',
   description:
     'Full Stack Engineer with 8+ years of experience specializing in React.js, Node.js, TypeScript, and OpenAI API integrations.',
   worksFor: {
     '@type': 'Organization',
-    name: 'Scotiabank',
+    name: 'Innoflow AI',
+    url: 'https://www.innoflowai.ca',
   },
   knowsAbout: [
     'React.js',

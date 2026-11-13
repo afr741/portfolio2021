@@ -5,9 +5,9 @@ export default function robots() {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        disallow: '/',
       },
     ],
-    sitemap: 'https://af4741.github.io/sitemap.xml',
+    sitemap: 'https://www.innoflowai.ca/sitemap.xml',
   };
 }
